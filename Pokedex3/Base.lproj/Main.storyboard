@@ -46,14 +46,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1xR-qi-qUK">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PokeCell" id="1xR-qi-qUK" customClass="PokeCell" customModule="Pokedex3" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="105" height="105"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-hk-87L">
+                                                <imageView userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ieg-hk-87L">
                                                     <rect key="frame" x="0.0" y="0.0" width="105" height="80"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="80" id="D4W-e1-Lap"/>
@@ -78,6 +78,10 @@
                                             <constraint firstItem="Ieg-hk-87L" firstAttribute="leading" secondItem="1xR-qi-qUK" secondAttribute="leading" id="tSY-d5-l2n"/>
                                             <constraint firstAttribute="bottom" secondItem="bHI-RJ-EuK" secondAttribute="bottom" id="v6M-tq-CYc"/>
                                         </constraints>
+                                        <connections>
+                                            <outlet property="nameLabel" destination="bHI-RJ-EuK" id="G2D-fN-alZ"/>
+                                            <outlet property="thumbImg" destination="Ieg-hk-87L" id="46U-x5-diw"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
